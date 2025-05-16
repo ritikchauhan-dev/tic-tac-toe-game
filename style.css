@@ -35,7 +35,6 @@ h1 {
   background-color: #fff;
   padding: 12px 15px;
   border-radius: 30px;
-  /* box-shadow: 0px 0px 10px #000000; */
 }
 
 #game-board {
@@ -57,20 +56,23 @@ h1 {
 .box {
   height: 18vmin;
   width: 18vmin;
-  /* margin: 0.3rem; */
   background: linear-gradient(to top left, #ff89eb, #5ec0f8);
   color: #000000;
   font-size: 5rem;
   border-radius: 30px;
   display: flex;
-  /* Add */
   justify-content: center;
-  /* Add */
   align-items: center;
-  /* Add */
   cursor: pointer;
   border: none;
   padding: 0;
+}
+
+.last-mssg {
+  display: none;
+  font-size: 7rem;
+  color: white;
+  padding: 19vw 0;
 }
 
 .btn {
@@ -82,4 +84,90 @@ h1 {
   border-radius: 30px;
   border: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 427px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .last-mssg {
+    font-size: 5rem;
+  }
+
+  #game-board {
+    height: 55vh;
+  }
+
+  .player {
+    font-size: 1.2rem;
+  }
+
+  .game {
+    height: 70vmin;
+    width: 70vmin;
+  }
+
+  .btn {
+    border-radius: 25px;
+  }
+
+  .box {
+    height: 17vmin;
+    width: 20vmin;
+    border-radius: 25px;
+    font-size: 3.5rem;
+  }
+
+  main {
+    margin-bottom: -30px;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+  }
+
+  .last-mssg {
+    font-size: 3.5rem;
+  }
+
+  .players {
+    padding: 0 2rem;
+    gap: 1rem;
+  }
+
+  #game-board {
+    height: 55vh;
+  }
+
+  .player {
+    font-size: 1.1rem;
+    padding: 10px 10px;
+  }
+
+  .game {
+    height: 70vmin;
+    width: 75vmin;
+  }
+
+  .btn {
+    border-radius: 25px;
+    padding: 0.6rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  .box {
+    height: 17vmin;
+    width: 22vmin;
+    border-radius: 20px;
+    font-size: 3.5rem;
+  }
+
+  main {
+    margin-bottom: -20px;
+  }
 }
