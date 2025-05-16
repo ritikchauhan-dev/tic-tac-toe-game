@@ -72,10 +72,9 @@ const checkWinner = () => {
             winnerSound.play(); // Play the winner sound
             main.style.display = "none";
             lastmssg.style.display = "block";
-            lastmssg.style.fontSize = "7rem";
-            lastmssg.style.margin="16vw 0" ;
             lastmssg.innerText = `${boxes[a].innerText} is the winner !`;
-            lastmssg.style.color = "white" ;
+            lastmssg.classList.add('last-mssg');
+            lastmssg.style.color = "white";
             return;
         }
     }
